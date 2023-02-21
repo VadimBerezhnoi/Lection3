@@ -1,8 +1,8 @@
 ﻿int[, ] matrix = new int[3, 4];
 
-for (int rows = 0; rows < 3; rows++)
+for (int rows = 0; rows < matrix.GetLength(0); rows++)
 {
-    for (int columns = 0; columns < 4; columns++)
+    for (int columns = 0; columns < matrix.GetLength(1); columns++)
     {
         Console.Write($"{matrix[rows, columns]} ");
     }
